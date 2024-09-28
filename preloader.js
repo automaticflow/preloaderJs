@@ -22,8 +22,8 @@ svgImage.style.cssText = `
     height: auto;
     display: none;
     position: absolute;
-    top: 100%;
-    left: 100%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 `;
 
