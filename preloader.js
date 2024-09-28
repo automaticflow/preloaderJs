@@ -8,8 +8,8 @@ overlay.style.cssText = `
     position: fixed;
     top: 0;
     left: 0;
-    width: 20%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 999;
 `;
@@ -18,15 +18,14 @@ const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
 svgImage.src = 'https://automaticflow.github.io/preloaderJs/animacao.gif';
 svgImage.style.cssText = `
-    width: 20%;
-    height: 20%;
+    width: 20vw;
+    height: auto;
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 `;
-svgImage.style.display = 'none';
 
 // Append the elements to the body
 document.body.appendChild(overlay);
@@ -40,7 +39,7 @@ function hideOverlay() {
 
 // Add an event listener to hide the overlay when all external JS files are loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Replace the following lines with the actual code that loads your external JS files
+    // Replace the following lines with the actual code that loads your external JS files.
     // For demonstration purposes, we'll use a setTimeout to simulate loading external JS files.
     setTimeout(hideOverlay, 100); // Replace with your actual loading code.
 });
