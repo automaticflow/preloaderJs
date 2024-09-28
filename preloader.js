@@ -18,8 +18,8 @@ const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
 svgImage.src = 'https://automaticflow.github.io/preloaderJs/animacao.gif';
 svgImage.style.cssText = `
-    max-width: 100%;
-    max-height: 100%;
+    width: 50%;
+    height: 50%;
     display: none;
     position: absolute;
     top: 50%;
